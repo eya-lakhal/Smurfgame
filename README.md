@@ -12,8 +12,8 @@ Ce projet utilise :
 1. Cloner les projets :
 
    * SmurfGame
-   * DataLayer
-   * UserControlLayer
+   * Smurflibrary
+   * SmurfControl
 
 2. Ouvrir SmurfGame dans Visual Studio
 
