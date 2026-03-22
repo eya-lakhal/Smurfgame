@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <Compile Remove="NewFolder1\**" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="Images\**" />
+    <None Remove="NewFolder1\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SmurfControl">
+      <HintPath>..\SmurfControl\bin\Debug\SmurfControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SmurfLibrary.DAL">
+      <HintPath>..\SmurfLibrary\SmurfLibrary.DAL\bin\Debug\net10.0-windows\SmurfLibrary.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="SmurlLibrary.BL">
+      <HintPath>..\SmurfLibrary\SmurlLibrary.BL\bin\Debug\net10.0-windows\SmurlLibrary.BL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
