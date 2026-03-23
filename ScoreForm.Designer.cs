@@ -1,6 +1,6 @@
 ﻿namespace SmurfGame
 {
-    partial class SmurfGameForm
+    partial class ScoreForm
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -16,16 +16,11 @@
         private void InitializeComponent()
         {
             SuspendLayout();
-            // 
-            // SmurfGameForm
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 750);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "SmurfGameForm";
-            Text = "Smurf Game - La Forêt Magique";
-            Load += SmurfGameForm_Load;
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(500, 400);
+            Name = "ScoreForm";
+            Text = "Tableau des Scores";
             ResumeLayout(false);
         }
     }
